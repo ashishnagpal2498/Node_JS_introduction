@@ -30,7 +30,6 @@ let mynumobj = myNum("10");
 let mynumObj2 = new myNum("10")
 console.log(mynumobj)
 console.log(mynumObj2)
-
 //But if we use object as return
 
 function MyNumber(stringstr) {
@@ -39,7 +38,13 @@ function MyNumber(stringstr) {
 
 let abcd = MyNumber("10")
 let ablm = new MyNumber("10")
+let n1 = new Number('10')
 console.log(abcd)
 console.log(ablm)
-abcd++;
+abcd++; ablm++; n1++;
 console.log(abcd)
+console.log(n1)
+
+//Console provided by the nODE JS
+//console.error('This is an err')
+// process.stdout('abc')

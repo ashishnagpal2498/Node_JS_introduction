@@ -28,17 +28,24 @@ fs.readFile('file.txt',function (err,data) {
     //so that if successful run nhi hua toh
     //it gives a value else - null
     console.log(data.toString());
+    console.log('File read properly')
 })
 
 //Streams and buffer
 //The size of buffer should be accomodated by both the mediums
 //Fs.read V/s fs.readfile
 //fs.write V/s Fs.writeFile
+//Need to create streams and buffers when reading or writing data
 
 //HTTP - client server model
 //Path utility of NodeJS
 //Creates path on which environment you are running on
-//Creating path -
+//Creating path - According to environment  - by joining them together , properly
+
+let path = require('path')
+
+console.log(path.join('abc','def/'))
+console.log(path.join(__dirname,'//file.txt'))
 
 //Events - Node JS
 //Reactive Programming -
