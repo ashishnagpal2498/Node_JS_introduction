@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path')
-//jadefassya
+
 fs.writeFile(path.join(__dirname,'newfile.html'),
     `<!DOCTYPE html>
     <html>
