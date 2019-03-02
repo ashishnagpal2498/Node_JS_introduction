@@ -33,9 +33,19 @@ console.log(arr);
 
 //Higher order function - getfirstname
 function getfirstname(str) {
-    return str.split(' ');
+    return str.split(' ')[0];
 }
 
 function abc(firsname,age) {
-    let fname = firsname()
+    let fname = firsname("Ashish Nagpal");
+    return {
+        name: fname,
+        age: age
+    }
 }
+
+console.log(abc(getfirstname,21));
+let array1 = [1,2,3,4,5,6];
+console.log(array1.slice(3,4));
+array1[10] = 9;
+console.log(array1[7])
