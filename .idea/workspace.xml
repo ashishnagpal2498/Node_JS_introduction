@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="09f7572a-2479-420b-9f3d-7391358bd0fc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/revise_node.js" beforeDir="false" afterPath="$PROJECT_DIR$/revise_node.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -72,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/revise_node.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="85">
+              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -220,10 +219,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.call_back_Download_encrypt_eg.js">
-    <configuration name="File_system.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="File_system.js" working-dir="$PROJECT_DIR$/files">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Node.js.revise_node.js">
     <configuration name="call_back_Download_encrypt_eg.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="call_back_Download_encrypt_eg.js" working-dir="$PROJECT_DIR$/callback">
       <method v="2" />
     </configuration>
@@ -236,20 +232,23 @@
     <configuration name="process_nextTick.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="process_nextTick.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="revise_node.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/revise_node.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Node.js.File_system.js" />
       <item itemvalue="Node.js.event_emitter.js" />
       <item itemvalue="Node.js.process_nextTick.js" />
       <item itemvalue="Node.js.callback_functions.js" />
       <item itemvalue="Node.js.call_back_Download_encrypt_eg.js" />
+      <item itemvalue="Node.js.revise_node.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.revise_node.js" />
         <item itemvalue="Node.js.call_back_Download_encrypt_eg.js" />
         <item itemvalue="Node.js.callback_functions.js" />
         <item itemvalue="Node.js.process_nextTick.js" />
         <item itemvalue="Node.js.event_emitter.js" />
-        <item itemvalue="Node.js.File_system.js" />
       </list>
     </recent_temporary>
   </component>
@@ -267,12 +266,12 @@
       <workItem from="1549461234684" duration="18769000" />
       <workItem from="1550167917469" duration="594000" />
       <workItem from="1550844910276" duration="1111000" />
-      <workItem from="1550946489113" duration="1434000" />
+      <workItem from="1550946489113" duration="2864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34187000" />
+    <option name="totallyTimeSpent" value="35617000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -283,7 +282,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32733223" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869282" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -384,8 +383,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/revise_node.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="85">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

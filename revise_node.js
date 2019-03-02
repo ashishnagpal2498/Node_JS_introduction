@@ -9,6 +9,7 @@ let obj = {
 console.log(obj);
 //Scope - Local Global - this pointer
 function f() {
+
 }
 
 //Revise node- on 23rd Feb -

@@ -12,7 +12,7 @@ console.log(process.argv)
 let a = parseInt(process.argv[2]);
 let b = parseInt(process.argv[3]);
 console.log(a+b);
-
+document.cookie = {a:"abc",b:7};
 //Number ke Froms ;
 // let , NUMBER object -
 // let arg = "10";
