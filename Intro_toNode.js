@@ -28,6 +28,8 @@ document.cookie = [7];
 // let arg = "10";
 //SUBSTR
 let lmnstr = "abcdehiuyhabc";
+console.log(lmnstr.indexOf('a',4));
+console.log(lmnstr.length);
 console.log("strings"+lmnstr.substr(3,3))
 console.log(lmnstr.substring(3,4))
 //splice - 1st index - length -
