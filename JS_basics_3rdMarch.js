@@ -49,3 +49,27 @@ let array1 = [1,2,3,4,5,6];
 console.log(array1.slice(3,4));
 array1[10] = 9;
 console.log(array1[7])
+
+//OOPS in JavaScript
+//Prototype classes
+// We can add anything in the objects of JS
+
+function createPerson(name,age) {
+    return {
+        name:name,
+        age:age
+    }
+}
+
+let person1 = createPerson("Ashish",21);
+console.log(person1)
+person1.gender = 'M';
+console.log(person1)
+
+///CREATING OBJECT FROM EXISTING OBJECT
+let person2 = Object.create(person1);
+console.log(person2);
+//Prototype inheritance -
+console.log(person2.__proto__===person1)
+let ab = {a:1}
+console.log(ab.__proto__.__proto__)
