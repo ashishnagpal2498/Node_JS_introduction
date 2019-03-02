@@ -8,7 +8,7 @@ console.log({}+[]);
 console.log(toString({}))
 delete abcde.a;
 console.log(abcde);
-document.cookie = [7];
+// document.cookie = [7];
 //Number ke Froms ;
 // let , NUMBER object -
 // let arg = "10";
@@ -21,10 +21,21 @@ console.log(lmnstr.substring(3,4))
 //splice - 1st index - length -
 //Higher order functions -
 
-
+let arr = [6,0,10];
+arr.push(10);
+console.log(arr);
 //sum = add(a,b) ; return value sum , if we do sum = add - this creates a reference function
 //Closure - Scope of variables inside a function
 
 // Array sorting - lexicographical -
 
 //MAP FILTER REDUCE
+
+//Higher order function - getfirstname
+function getfirstname(str) {
+    return str.split(' ');
+}
+
+function abc(firsname,age) {
+    let fname = firsname()
+}
