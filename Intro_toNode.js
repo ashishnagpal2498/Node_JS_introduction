@@ -50,6 +50,7 @@ console.log(n1)
 var bob = 10;
  function abv() {
      // console.log(bob);
+     console.log(this)
      let bob = 20;
      console.log(bob);
  }
