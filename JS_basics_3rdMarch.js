@@ -73,3 +73,50 @@ console.log(person2);
 console.log(person2.__proto__===person1)
 let ab = {a:1}
 console.log(ab.__proto__.__proto__)
+
+//THIS Pointer
+//When a function is used inside a object- 'this' pointer
+//refers to script
+// this.a = 10;
+console.log(this)
+
+//Outermost scope in NODEJS
+console.log(global.process.argv)
+
+let obj = {
+    a:9,
+    ab: function () {
+        console.log(this);
+        // return (this);
+    }
+}
+
+console.log(obj.ab());
+
+//Lexicographical scoping - this will point to the code where it is written rather where it is called
+function lmno() {
+    this.a = 10;
+    this.b = 20;
+}
+lmno();
+console.log(global.b);
+
+//new keyword and AUTOBOXING
+function Cperson(name,age,num) {
+    let number = num ;
+    this.name = name;
+    this.age = age;
+    this.getnum = function () {
+        return number;
+    }
+}
+
+let p1 = new Cperson("Ashish",21,982983252);
+console.log(p1.getnum());
+let p2 = new Cperson("abc",98,9876);
+console.log(p1);
+//NEVER MIX person() with new person();
+//former will give the return value to the variable assigned and later will create an empty object
+
+//PROTOTYPE of Currently existing classes - STRINGS ARRAYS
+

@@ -7,11 +7,25 @@
 </head>
 <body>
 <form method="" action="">
-    <input type="text" name="pass">
+    <input type="text" name="pass" onblur="ab(2)" onclick="ab(1)" >
 </form>
 </body>
 <script>
     let inpt = document.querySelector("input[name='pass']");
     console.log(inpt);
+    function ab(val) {
+        if(val===2) {
+            // inpt.style.border = '1px solid red'
+            // inpt.style.outline = '1px solid red'
+            inpt.focus(function () {
+                inpt.style.outlineOffset = "red"
+            })
+        }
+        else
+        {
+            inpt.style.border = '1px solid blue'
+            inpt.style.outline = '1px solid blue'
+        }
+    }
 </script>
 </html>
