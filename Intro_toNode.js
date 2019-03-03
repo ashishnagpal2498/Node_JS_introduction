@@ -46,3 +46,11 @@ console.log(n1)
 //Console provided by the nODE JS
 //console.error('This is an err')
 // process.stdout('abc')
+
+var bob = 10;
+ function abv() {
+     // console.log(bob);
+     let bob = 20;
+     console.log(bob);
+ }
+ abv();

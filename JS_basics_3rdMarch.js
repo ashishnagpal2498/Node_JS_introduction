@@ -120,3 +120,5 @@ console.log(p1);
 
 //PROTOTYPE of Currently existing classes - STRINGS ARRAYS
 
+//OOPS IN ES6 -
+
