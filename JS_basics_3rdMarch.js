@@ -122,3 +122,5 @@ console.log(p1);
 
 //OOPS IN ES6 -
 
+//Time and Date Function -
+
