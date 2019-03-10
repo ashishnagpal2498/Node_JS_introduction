@@ -76,3 +76,7 @@ console.log(Student.prototype);
 
 //JSON -
 
+//JavaScript Object Notation -
+//Javascript provides Global Json methods , objects -
+
+//Accessing Json Files - using Objects , Arrays - JSON DIRECTORY
