@@ -61,11 +61,18 @@ function Person(name,age,gender) {
 
 function Student(name,age,g) {
     Person.call(this,name,age,g);
-    this.greeting = function () {
-        return 20;
-    }
 }
 
 let std = new Student("Abc",21,'M');
-console.log(std)
+console.log(std.__proto__)
 console.log(Object.getOwnPropertyNames(Student.prototype));
+console.log(std.greeting());
+
+//***************************************
+Student.prototype = Object.create(Person.prototype);
+console.log(Student.prototype);
+
+//********************************************
+
+//JSON -
+
