@@ -124,9 +124,51 @@ process.nextTick(function () {
 
 function one(a,oneb) {
     console.log(a);
-//    oneb is a function
-    oneb(a+1);
+//    oneb is a callback function
+    oneb(a+1,(c,threecb)=>{ //twocb function has a callback function
+        console.log(c);
+        threecb(c+1); //Iski defination ???
+    });
 }
-one(1,(b)=>{
+one(1,(b,twocb)=>{ //defination of oneb
     console.log(b);
+    twocb(b+1,(d)=>{
+        console.log(d);
+    }); //this is callback function of oneb - where should its defination go ??
+})
+
+//Callback - hellzz , encryption
+//
+function downloadFile(url,downloaded) {
+    // console.log(url);
+    setTimeout(()=>{
+        downloaded(null,"Data Downloaded")
+    },2000)
+}
+function encryptFile(data,encrpted) {
+    setTimeout(()=>{
+        encrpted(null,`{{{${data}}}}`)
+    },1000)
+}
+function saveFile(data,saved) {
+    setTimeout(()=>{
+        saved(null,true);
+    },1000)
+}
+
+downloadFile("https://cb.lk/abc",(err,data)=>{
+    if(!err)
+    {
+        encryptFile(data,(err2,encrpted_data)=>{
+            if(!err2)
+            {
+                saveFile(encrpted_data,(err3,saved_data)=>{
+                    if(!err3 && saved_data)
+                    {
+                        console.log('data dl ed , encr ed and saved ');
+                    }
+                })
+            }
+        })
+    }
 })
