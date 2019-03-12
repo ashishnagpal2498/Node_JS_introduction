@@ -58,3 +58,75 @@ console.log('hello')
         console.log(data.toString())
     })
 // },2000)
+
+//Streams and Buffer - When there is connection between faster and slower medium -
+//One of the medium has to wait for the data
+//Buffer - stream of hex charaters
+
+//Crash the program if error exist - throw err -
+//Console.error - gives the console as error - print in red -
+
+//***********************************HTTP API ****************************************
+//HTTP - client side as well as server side
+//client ka call back - response of the data send to the server
+//Server - call - req, res - what should be the response for the coming request
+
+//Client - called - once -
+//server - calls every time someone hits the path
+
+//PATH - utility to join path according to the environment -
+const path = require('path');
+console.log(path.join('/a','/b'))
+
+//**********************EVENTS NODEJS************************
+//Reactive programming -
+//eventemitetr emit - To fire an event
+//event.on - to create an event
+//Data sync in async process
+
+const EventEmitter = require('events')
+
+const event = new EventEmitter(); //Constructor call;
+
+// event.on('written',function (filename) {
+//     console.log(`The file ${filename} has been written`)
+// })
+//
+// fs.writeFile(path.join(__dirname,'file11.txt',
+//     "The file is in the webstorm",
+//     ()=>{
+//     //Callback function
+//         //fire the event
+//         event.emit('written',1);
+//     }))
+// event.emit('written',0);
+
+event.on('seqwrite',function (filenum) {
+    if(filenum> 4) return;
+    console.log(`The file number - ${filenum} has been written`)
+    let newfilenum = filenum + 1;
+    fs.writeFile(path.join(__dirname,"fileabc"+`${filenum}`+".txt"),
+            `The file to be written using event emitter - is file${filenum}`,
+        function () {
+            event.emit('seqwrite',newfilenum);
+        })
+})
+event.emit('seqwrite',0);
+
+//*****************************Next tick *************************
+//Aync- Function - Nexttick -
+process.nextTick(function () {
+    console.log('next tick');
+})
+
+//*********************Callbacks************************************
+//Callback Functions -
+
+function one(a,oneb) {
+    console.log(a);
+//    oneb is a function
+    oneb(a+1);
+}
+one(1,(b)=>{
+    console.log(b);
+})
