@@ -1,3 +1,4 @@
+ //Such type is used to created dynamic thing in Pages -
  var header = document.querySelector('header')
     var section = document.querySelector('section');
 
